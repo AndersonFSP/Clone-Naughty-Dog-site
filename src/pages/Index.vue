@@ -1,7 +1,7 @@
 <template>
    <div >
      <Carousel :slides='slides' />
-     <CardNews :cards='cards' />
+     <CardNews :cards='cards' titulo="Latest News" />
   </div>
 </template>
 

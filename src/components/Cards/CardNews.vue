@@ -1,7 +1,9 @@
 <template>
   <div>
-        <h4>Latest News</h4>
+    <div class="q-pa-md ">
+        <h4 class="text-center text-grey">{{titulo}}</h4>
          <q-separator color="grey" />
+    </div>
   <div class="q-pa-md row justify-center q-gutter-md">
         <q-card class="my-card" v-for="card in cards" :key="card.id">
           <div class="foto-area">
@@ -22,7 +24,8 @@
 export default {
     name: 'cardnews',
     props:{
-      cards: Array
+      cards: Array,
+      titulo: String,
     }
 }
 </script>

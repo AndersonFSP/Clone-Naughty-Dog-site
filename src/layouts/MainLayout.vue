@@ -15,17 +15,25 @@
     </q-header>
 
 
-  <!-- <q-footer bordered class="bg-grey-8 text-white">
+  <q-footer bordered class="bg-grey-9 text-white">
       <q-toolbar>
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
-          </q-avatar>
-          Title
-        </q-toolbar-title>
+         <div class="q-pa-md">
+           <div class="row">
+              <div class="col-md-12 text-h5">NAUGHTY DOG, LLC.</div>
+           </div>
+            <div class="row">
+              <div class="col-md-12" style="height:30px;"><span class="footer-link">Privacy Policy</span> | <span class="footer-link">Terms of Use</span></div>
+           </div>
+           <div class="row">
+              <div class="col-md-12 footer-link" style="height:30px;">California Privacy Rights</div>
+           </div>
+           <div class="row">
+              <div class="col-md-12 footer-link">© 2020 Sony Interactive Entertainment LLC.</div>
+           </div>
+         </div>
       </q-toolbar>
       
-    </q-footer> -->
+    </q-footer>
     <q-page-container>
       <router-view />
     </q-page-container>

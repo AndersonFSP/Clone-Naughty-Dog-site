@@ -11,10 +11,17 @@ export default {
 </script>
 <style>
    .hov{
-        transition: color 0.5s ease-out;
+        transition: color 0.2s ease-out;
     }
     
     .hov:hover{
+        color: red;
+    }
+    .footer-link{
+        transition: color 0.2s ease-out;
+    }
+    
+    .footer-link:hover{
         color: red;
     }
 </style>
