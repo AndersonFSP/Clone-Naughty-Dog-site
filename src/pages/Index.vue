@@ -1,7 +1,8 @@
 <template>
    <div >
-     <Carousel :slides='slides' />
-     <CardNews :cards='cards' titulo="Latest News" />
+      <Carousel :slides='slides'/>
+      <TitleSpace titulo="Latest News"/>
+      <CardNews :cards='cards'/>
   </div>
 </template>
 
@@ -9,17 +10,14 @@
 import { mapGetters } from 'vuex'
 import Carousel from 'components/Carousel/Carousel';
 import CardNews from 'components/Cards/CardNews';
+import TitleSpace from 'components/Titulo/TitleSpace';
 
 export default {
   name: 'PageIndex',
   components: {
     Carousel,
     CardNews,
-  },
-  data(){
-    return{
-      
-    }
+    TitleSpace,
   },
   computed: {
    ...mapGetters('slides', ['slides']),

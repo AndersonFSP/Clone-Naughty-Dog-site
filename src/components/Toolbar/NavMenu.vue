@@ -4,12 +4,14 @@
            class="flat text-black text-uppercase"
            shrink
         >
-          <q-tab name="news" label="News" class="hov"/>
+          <q-route-tab to='/a' name="news" label="News" class="hov"/>
           <q-btn-dropdown auto-close flat stretch label="company" class="hov">
             <q-list >
-              <q-item clickable>
-                  <q-item-section >About</q-item-section>
-              </q-item>
+              <router-link to="/about" class="text-black" style="text-decoration:none;">
+                <q-item clickable>
+                    <q-item-section>About</q-item-section>
+                </q-item>
+              </router-link>
               <q-item clickable>
                   <q-item-section>Contact</q-item-section>
               </q-item>
@@ -46,6 +48,11 @@
 <script>
 export default {
     name:'NavMenu',
+    methods:{
+      redirect(){
+        this.$router.push({name: 'inde'})
+      }
+    }
 }
 </script>
 
