@@ -1,8 +1,14 @@
 <template>
-   <div >
+   <div>
       <Carousel :slides='slides'/>
-      <TitleSpace titulo="Latest News"/>
-      <CardNews :cards='cards'/>
+      <div class="row justify-center">
+        <div class="col-md-10">
+          <section>
+            <TitleSpace titulo="Latest News"/>
+            <CardNews :cards='cards'/>
+          </section>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -20,11 +26,15 @@ export default {
     TitleSpace,
   },
   computed: {
-   ...mapGetters('slides', ['slides']),
-   ...mapGetters('slides', ['cards'])
+   ...mapGetters('slides', ['slides', 'cards']),
   }
 }
 </script>
+
 <style scoped>
- 
+
+  section {
+    margin: 4rem 0;
+  }
+  
 </style>

@@ -1,15 +1,7 @@
 <template>
-  <div class="q-pa-md">
-      <div class="row justify-around" style="height:100px">
-        <div class="col-sm-4">
-          <h4 class="text-center text-uppercase text-grey-9">{{titulo}}</h4>
-        </div>
-        <div class="col-sm-4"></div>
-      </div>
-      <div class="row">
-          <q-separator color="grey" size="10px"/>
-      </div>
-    </div>
+  <div style="margin-bottom:0px;">
+    <h4 class="text-left text-uppercase text-grey-9" style="border-bottom:1px solid;">{{titulo}}</h4>
+  </div>
 </template>
 
 <script>

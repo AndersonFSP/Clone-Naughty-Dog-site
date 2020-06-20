@@ -1,13 +1,15 @@
 <template>
   <q-layout view="lHh Lpr lff">
     <q-header >
-      <q-toolbar class="bg-white text-black" >
+      <q-toolbar class="bg-white text-black" style="padding:25px;">
 
         <q-toolbar-title >
+          
           <q-img
-           src="https://allvectorlogo.com/img/2016/04/naughty-dog-logo.png"
+           src="https://s3.us-east-1.amazonaws.com/nd.images/uploads/NaughtyDog_LogoRGB_WHT_Web_600x95_01.png"
            title="Naughty dog"
-           style="height: 100px; max-width: 300px" 
+           style="width:350px; height: 54px; cursor:pointer;" 
+           @click='redirectHome'
           />
         </q-toolbar-title>
         <NavMenu/>
@@ -53,6 +55,11 @@ export default {
   data () {
     return {
       leftDrawerOpen: false,
+    }
+  },
+  methods:{
+    redirectHome(){
+      this.$router.push({name: 'index'})
     }
   }
 }

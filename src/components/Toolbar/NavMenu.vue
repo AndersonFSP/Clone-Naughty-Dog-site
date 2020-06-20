@@ -7,7 +7,7 @@
           <q-route-tab to='/a' name="news" label="News" class="hov"/>
           <q-btn-dropdown auto-close flat stretch label="company" class="hov">
             <q-list >
-              <router-link to="/about" class="text-black" style="text-decoration:none;">
+              <router-link :to="{name: 'about'}" class="text-black" style="text-decoration:none;">
                 <q-item clickable>
                     <q-item-section>About</q-item-section>
                 </q-item>
@@ -49,9 +49,6 @@
 export default {
     name:'NavMenu',
     methods:{
-      redirect(){
-        this.$router.push({name: 'inde'})
-      }
     }
 }
 </script>

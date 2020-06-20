@@ -24,11 +24,12 @@ export default {
        transition: transform .3s ease;
     }
     .vertical{
-            height: 210px;
+      height: 210px;
       width: 210px;
+      margin-bottom:10px;
     }
     .horizontal{
-         height: 166px;
+         height: 168px;
     }
     .horizontal:hover{
        border-bottom:4px red solid;
