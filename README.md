@@ -1,6 +1,6 @@
 # Quasar App (naughty-dog)
 
-Replica do site da naughty dog
+Réplica não exata do site da naughty dog
 
 ## Install the dependencies
 ```bash
