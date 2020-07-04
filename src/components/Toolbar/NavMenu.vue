@@ -7,14 +7,13 @@
           <q-route-tab to='/a' name="news" label="News" class="hov"/>
           <q-btn-dropdown auto-close flat stretch label="company" class="hov">
             <q-list >
-              <router-link :to="{name: 'about'}" class="text-black" style="text-decoration:none;">
-                <q-item clickable>
-                    <q-item-section>About</q-item-section>
+                <q-item :to="{name: 'about'}" clickable>
+                    <q-item-section class="text-black" >About</q-item-section>
                 </q-item>
-              </router-link>
-              <q-item clickable>
-                  <q-item-section>Contact</q-item-section>
-              </q-item>
+              
+                <q-item :to="{name: 'contact'}" clickable>
+                    <q-item-section class="text-black" >Contact</q-item-section>
+                </q-item>
             </q-list>
           </q-btn-dropdown>
           <q-btn-dropdown auto-close flat stretch label="company" class="hov">
@@ -47,7 +46,7 @@
 
 <script>
 export default {
-    name:'NavMenu',
+    name:'nav-menu',
     methods:{
     }
 }

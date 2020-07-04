@@ -24,4 +24,16 @@ export default {
     .footer-link:hover{
         color: red;
     }
+     .transition-white{
+       color: red;
+        transition: color 0.2s ease-out;
+    }
+    
+    .transition-white:hover{
+        color: white;
+    }
+
+    section {
+      margin: 4rem 0;
+    }
 </style>

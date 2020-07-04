@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lff">
     <q-header >
-      <q-toolbar class="bg-white text-black" style="padding:25px;">
+      <q-toolbar class="bg-grey-2 text-black" style="padding:25px;">
 
         <q-toolbar-title >
           
@@ -12,7 +12,7 @@
            @click='redirectHome'
           />
         </q-toolbar-title>
-        <NavMenu/>
+        <nav-menu/>
       </q-toolbar>
     </q-header>
 
@@ -35,7 +35,9 @@
          </div>
       </q-toolbar>
       
+      
     </q-footer>
+    
     <q-page-container>
       <router-view />
     </q-page-container>

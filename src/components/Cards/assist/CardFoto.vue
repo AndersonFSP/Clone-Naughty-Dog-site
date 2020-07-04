@@ -1,6 +1,7 @@
 <template>
     <div class="foto-area" :class="vertical? 'vertical' : 'horizontal'">
         <img :src="foto" :width="vertical? '210': ''">
+        
     </div>
 </template>
 
@@ -12,13 +13,12 @@ export default {
         vertical: {
             type: Boolean,
             default: false,
-
         }
     }
 }
 </script>
 
-<style>
+<style scoped>
     .foto-area{
       overflow: hidden;
        transition: transform .3s ease;
@@ -41,8 +41,9 @@ export default {
       cursor: pointer;
        transition: transform .3s ease;
     }
-  
     img:hover{
        transform: scale(1.1);  
     }
+
+    
 </style>

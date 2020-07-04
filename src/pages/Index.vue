@@ -1,11 +1,19 @@
 <template>
    <div>
-      <Carousel :slides='slides'/>
+      <carousel :slides='slides'/>
       <div class="row justify-center">
         <div class="col-md-10">
           <section>
-            <TitleSpace titulo="Latest News"/>
-            <CardNews :cards='cards'/>
+            <title-space titulo="Latest News"/>
+            <card-news :cards='cards' />
+          </section>
+          <section>
+             <title-space titulo="in the press"/>
+            <card-news 
+              :cards='cardsPress' 
+              :readMore="false" 
+               mode="press"
+            />
           </section>
         </div>
       </div>
@@ -26,15 +34,11 @@ export default {
     TitleSpace,
   },
   computed: {
-   ...mapGetters('slides', ['slides', 'cards']),
+   ...mapGetters('slides', ['slides', 'cards', 'cardsPress']),
   }
 }
 </script>
 
 <style scoped>
 
-  section {
-    margin: 4rem 0;
-  }
-  
 </style>

@@ -2,8 +2,9 @@
   <div class="q-pa-md">
       <div class="row">
         <div class="col-md-7 offset-md-1 col-xs-12">
-            <TitleSpace titulo="about"/>
-            <div>
+            <section>
+                <title-space titulo="about"/>
+                <!-- <q-icon name="fas fa-user-tie" /> -->
                    <p> Established in 1984, Naughty Dog is one of the most successful and prolific game 
                        development studios in the world and a flagship
                     first-party studio within PlayStation’s Worldwide Studios group. From creating the iconic 
@@ -21,13 +22,16 @@
                     41.7 million copies sold.
                     </p> 
                     <p>Currently, Naughty Dog is developing The Last of Us Part II, the much-anticipated sequel to 2013’s The Last of Us.
-                        Naughty Dog is a wholly-owned subsidiary of Sony Interactive Entertainment located in Santa Monica, California. For more information, follow us on Twitter, Facebook, or Instagram.
+                    Naughty Dog is a wholly-owned subsidiary of Sony Interactive Entertainment located in Santa Monica, California. 
+                    For more information, follow us on Twitter, Facebook, or Instagram.
                     </p> 
-            </div>
+            </section>
         </div>
-        <div class="col-md-3 offset-md-1 col-xs-12">
-            <CardFoto :vertical="true"  foto="https://s3.us-east-1.amazonaws.com/nd.images/uploads/careers_1x1.png"/>
-            <CardFoto :vertical="true"  foto="https://s3.us-east-1.amazonaws.com/nd.images/uploads/utll_now_1x1.png"/>
+        <div class="col-md-3 offset-md-1 col-xs-12" >
+            <section>
+                <card-foto :vertical="true"  foto="https://s3.us-east-1.amazonaws.com/nd.images/uploads/careers_1x1.png"/>
+                <card-foto :vertical="true"  foto="https://s3.us-east-1.amazonaws.com/nd.images/uploads/utll_now_1x1.png"/>
+            </section>
         </div>
       </div>
   </div>
@@ -45,6 +49,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+   
 </style>

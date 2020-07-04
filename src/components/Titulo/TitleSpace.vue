@@ -6,8 +6,10 @@
 
 <script>
 export default {
+   name: 'title-space',
     props:{
-        titulo: String
+        titulo: String,
+        default: 'Titulo'
     }
 }
 </script>
